@@ -3,11 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './containers/Home'
 import About from './containers/About'
 import Contact from './containers/Contact'
-import ListingDetails from './containers/ListingDetail'
-import Listings from './containers/Listings'
-import Login from './containers/Signin'
+
+import Signin from './containers/Signin'
 import SignUp from './containers/SignUp' 
-import NotFound from './components/NotFound'
 
 import './App.css';
 import Layout from './hocs/Layout'
@@ -21,10 +19,8 @@ const App = () => (
               <Route exact path="/" element={<Home />} />
               <Route exact path="/about" element={<About />} />
               <Route exact path="/contact" element={<Contact />} />
-              <Route exact path="/listings" element={<Listings />} />
-              <Route exact path="/listings/:id" element={<ListingDetails />} />
+              <Route exact path="/signin" element={<Signin />} />
               <Route exact path="/signup" element={<SignUp />} />
-              <Route path="*" element={<NotFound />} />
             </Routes>
         </Layout>
       </Router> 

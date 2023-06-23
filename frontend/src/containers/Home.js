@@ -1,13 +1,21 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
-import ListingForm from '../components/ListingForm';
-import Listings from '../components/Listings';
-import Pagination from '../components/Pagination';
 
-const Home = () => (
+import Card from '../components/Card';
+
+const Home = () => {
+  return (
     <div>
-        hello
+      <Helmet>
+        <title>Home Page</title>
+      </Helmet>
+      <h1>Welcome to the Home Page</h1>
+      <Card />
+      <Card />
+      <Card />
     </div>
+  );
+};
 
-);
 export default Home;
+

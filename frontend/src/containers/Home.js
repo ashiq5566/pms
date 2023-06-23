@@ -10,12 +10,21 @@ const Home = () => {
         <title>Home Page</title>
       </Helmet>
       <h1>Welcome to the Home Page</h1>
-      <Card />
-      <Card />
-      <Card />
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />        
+      </div>
     </div>
   );
 };
 
 export default Home;
+
 
